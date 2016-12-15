@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--全局的属性配置-->
+    <settings>
+        <!--使用jdbc的getGenneratedKeys 获取数据库自增主键-->
+        <setting name="useGeneratedKeys" value="true"/>
+        <!--列别名替换列明，这本来是默认开启的-->
+        <setting name="useColumnLabel" value="true"/>
+        <!--开启驼峰命名转换，用于数据库字段到entity的属性的转换，
+        但是要按照严格的命名规范，否则需要在具体的mapper.xml中做手动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+</configuration>
